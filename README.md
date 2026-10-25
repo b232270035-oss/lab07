@@ -3,10 +3,9 @@
 - Оюутан: Даваажав Дэлгэрмаа
 - Код: B232270071
 - node -v: v24.22.1
-- Браузер: Firefox (session, Debian Linux), хувилбар <Firefox → Help → About Firefox>
+- Браузер: Firefox (session, Debian Linux)
 - Систем: Debian Linux (session), Windows (curl evidence, 2026-10-25)
 - Repo: https://github.com/b232270035-oss/lab07
-- app.js: багшийн файл, repo-д оруулаагүй
 
 ## Олдсон согогууд
 1. BUG-01: «Нийт ном» тоолуур зөрүүтэй
