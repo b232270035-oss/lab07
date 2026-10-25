@@ -1,7 +1,7 @@
 ﻿# Lab 07: Exploratory Testing and SBTM
 
 - Оюутан: Даваажав Дэлгэрмаа
-- Код: B232270071
+- Код: B232270035
 - node -v: v24.22.1
 - Браузер: Firefox (session, Debian Linux)
 - Систем: Debian Linux (session), Windows (curl evidence, 2026-10-25)
