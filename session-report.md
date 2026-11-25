@@ -1,10 +1,17 @@
 # Session report
 
-**Тестер:** Дэлгэрмаа (B232270035)  
-**Огноо, цаг:** 2026-11-26, 00:58:40–01:58:40 (60 минут, Asia/Ulaanbaatar)  
-**Систем:** Debian GNU/Linux 13.7  
-**Node.js:** v20.20.2  
-**Браузер:** Codex in-app browser (engine build харагдаагүй). Системд Mozilla Firefox 153.7.0esr суусан боловч энэ session-д ашиглаагүй.  
+**Оюутан:** Дэлгэрмаа (B232270035)
+
+**Тестер:** Codex-ийн browser automation (local repository дээрх даалгавраар)
+
+**Огноо, цаг:** 2026-11-26, 00:58:40–01:58:40 (60 минут, Asia/Ulaanbaatar)
+
+**Систем:** Debian GNU/Linux 13.7
+
+**Node.js:** v20.20.2
+
+**Браузер:** Codex in-app browser (engine build харагдаагүй). Системд Mozilla Firefox 153.7.0esr суусан боловч энэ session-д ашиглаагүй.
+
 **Mission:** Уншлагын жагсаалт аппын чанар, өгөгдлийн validation, UI болон API-ийн зан төлөвийг шинжлэх.
 
 ## Charter-ийн хураангуй
@@ -58,6 +65,7 @@ Charter-ийг session эхлэхээс өмнө `47f6e24` commit-оор (00:48:
 2026-11-26 01:51 — Long title болон special character test records нийлээд list 5 болов; `/api/stats` total 6 гэж буцаасан. Session data-аар BUG-01 хэвээр.
 2026-11-26 01:53 — `Бүгд` дарахад full list буцаж, 5 мөр харагдав; A&B title `A &amp; B` хэвээр, count 6. Test state-ийг уншлагад сэргээв.
 2026-11-26 01:54 — Final API pass: `/api/stats` total 6 for 5 items; `/old` HTTP 500. Session findings remain reproducible after long exploratory run.
+2026-11-26 01:58:40 — 60 минутын session-ийг хаав.
 
 2026-11-26 01:58:40 — 60 минутын session-ийг хаав.
 
@@ -84,7 +92,7 @@ Setup 10% (6 мин) · Тест дизайн ба гүйцэтгэл 70% (42 м
 9. 999, 2101, 2000.5, `abc`, жилгүй утгууд HTTP 201 авч хадгалагдана; spec 1000–2100 бүхэл тоо шаарддаг.
 10. Устгасны дараах мессеж “Ном нэмэгдлээ” гэж буруу гарна.
 11. 180 тэмдэгт тасралтгүй title хүснэгтийг өргөсгөж, бусад баганыг дэлгэцээс гаргана.
-12. `&` болон `<...>` агуулсан гарчиг entity хэлбэрээр харагдаж, эх утгаар хайх үр дүнгүй.
+12. HTML special тэмдэгт агуулсан гарчиг entity хэлбэрээр харагдаж, эх утгаар хайх үр дүнгүй.
 13. JSON `null` POST server-ийг унагаж, дараагийн request connection refused болгоно.
 
 UI-ийн үндсэн нотолгоо `screenshots/bug-01.png`–`screenshots/bug-07.png`; API-ийн бүтэн `curl -i` нотолгоо `evidence/` дотор байна.
